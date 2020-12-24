@@ -879,6 +879,10 @@ export default class HotelDatepicker {
 			return;
 		}
 
+		if (this.singleDaySelection) {
+			this.end == this.start
+		}
+
 		const isSelectStart = (this.start && this.end) || (!this.start && !this.end);
 
 		// Return early for those days where the checkin or checkout is disabled
